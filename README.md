@@ -63,17 +63,17 @@ Results appear in the text box with timestamps.
 
 ## (note these scores may vary for some people please contact me at nkthebass@gmail.com if you see issues with provided scores)
 ### Single-Core Scores
-* FX-4300: 19
-* i5-7200U: 31.5
-* N200: 33
-* i7-4770K: 37
-* i7-6700: 39.5
-* Ryzen 5 3600: 41
+* FX-4300: 17
+* i5-7200U: 23
+* N200: 23.5
+* i7-4770K: 36.5
+* i7-6700: 37
+* Ryzen 5 3600: 38
 * i7-5960X 4.3GHz: 43.5
-* Core i5-210H: 60
-* Ryzen 7 7700X: 65
-* Ryzen 5 7600X: 65
-* Ryzen 9 9950X: 72
+* Core i5-210H: 56
+* Ryzen 7 7700X: 58
+* Ryzen 5 7600X: 58
+* Ryzen 9 9950X: 65
 
 ### Multi-Core Scores
 * i5-7200U: 105
@@ -138,5 +138,6 @@ Ported from XenoCPUUtility by nkthebass
 Legacy version created for historical OS support
 
 This project does take use of "vibe coding" rest be assured it is far from being "AI slop". 
+
 
 
