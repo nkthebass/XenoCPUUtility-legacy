@@ -21,8 +21,7 @@ This legacy version includes all the core performance testing functionality:
   - Periodic idle dips to detect voltage regulation issues
 
 ### Control Features
-- Pause/Resume stress testing
-- Real-time status display
+- start/stop stress testing
 - CPU info and metrics display
 
 ## System Requirements
@@ -62,7 +61,31 @@ Or open in Visual Studio and build normally.
 
 Results appear in the text box with timestamps.
 
-## Architecture
+## (note these scores may vary for some people please contact me at nkthebass@gmail.com if you see issues with provided scores)
+### Single-Core Scores
+* FX-4300: 19
+* i5-7200U: 31.5
+* N200: 33
+* i7-4770K: 37
+* i7-6700: 39.5
+* Ryzen 5 3600: 41
+* i7-5960X 4.3GHz: 43.5
+* Core i5-210H: 60
+* Ryzen 7 7700X: 65
+* Ryzen 5 7600X: 65
+* Ryzen 9 9950X: 72
+
+### Multi-Core Scores
+* i5-7200U: 105
+* i7-4770K: 215
+* i7-6700: 230
+* Core i5-210H: 515
+* i7-5960X 4.3GHz: 530
+* Ryzen 5 7600X: 685
+* Ryzen 9 9950X: 1700
+* ryzen 5 3600: 460
+
+---
 
 ### Core Components
 
@@ -113,3 +136,4 @@ Results appear in the text box with timestamps.
 
 Ported from XenoCPUUtility by nkthebass
 Legacy version created for historical OS support
+
