@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "gUWO81xXARc=",
+  "success": true,
+  "projectFilePath": "D:\\XenoCPUUtility-1.9.4\\XenoCPUUtility-Legacy\\XenoCPUUtility-Legacy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Noah\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\Noah\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.3\\microsoft.netframework.referenceassemblies.net472.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

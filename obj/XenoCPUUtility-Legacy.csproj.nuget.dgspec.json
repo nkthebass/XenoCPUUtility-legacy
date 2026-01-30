@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\XenoCPUUtility-1.9.4\\XenoCPUUtility-Legacy\\XenoCPUUtility-Legacy.csproj": {}
+  },
+  "projects": {
+    "D:\\XenoCPUUtility-1.9.4\\XenoCPUUtility-Legacy\\XenoCPUUtility-Legacy.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\XenoCPUUtility-1.9.4\\XenoCPUUtility-Legacy\\XenoCPUUtility-Legacy.csproj",
+        "projectName": "XenoCPUUtilityLegacy",
+        "projectPath": "D:\\XenoCPUUtility-1.9.4\\XenoCPUUtility-Legacy\\XenoCPUUtility-Legacy.csproj",
+        "packagesPath": "C:\\Users\\Noah\\.nuget\\packages\\",
+        "outputPath": "D:\\XenoCPUUtility-1.9.4\\XenoCPUUtility-Legacy\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Noah\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+C:\Users\noahc\Downloads\XenoCPUUtility-1.9.4\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\obj\Release\net472\XenoCPUUtility-Legacy.csproj.AssemblyReference.cache
+C:\Users\noahc\Downloads\XenoCPUUtility-1.9.4\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\obj\Release\net472\XenoCPUUtility-Legacy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noahc\Downloads\XenoCPUUtility-1.9.4\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\obj\Release\net472\XenoCPUUtility-Legacy.csproj.CoreCompileInputs.cache
+C:\Users\noahc\Downloads\XenoCPUUtility-1.9.4\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\bin\Release\net472\XenoCPUUtilityLegacy.exe.config
+C:\Users\noahc\Downloads\XenoCPUUtility-1.9.4\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\bin\Release\net472\XenoCPUUtilityLegacy.exe
+C:\Users\noahc\Downloads\XenoCPUUtility-1.9.4\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\bin\Release\net472\XenoCPUUtilityLegacy.pdb
+C:\Users\noahc\Downloads\XenoCPUUtility-1.9.4\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\obj\Release\net472\XenoCPUUtilityLegacy.exe
+C:\Users\noahc\Downloads\XenoCPUUtility-1.9.4\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\obj\Release\net472\XenoCPUUtilityLegacy.pdb
+D:\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\bin\Release\net472\XenoCPUUtilityLegacy.exe.config
+D:\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\bin\Release\net472\XenoCPUUtilityLegacy.exe
+D:\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\bin\Release\net472\XenoCPUUtilityLegacy.pdb
+D:\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\obj\Release\net472\XenoCPUUtility-Legacy.csproj.AssemblyReference.cache
+D:\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\obj\Release\net472\XenoCPUUtility-Legacy.GeneratedMSBuildEditorConfig.editorconfig
+D:\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\obj\Release\net472\XenoCPUUtility-Legacy.csproj.CoreCompileInputs.cache
+D:\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\obj\Release\net472\XenoCPUUtilityLegacy.exe
+D:\XenoCPUUtility-1.9.4\XenoCPUUtility-Legacy\obj\Release\net472\XenoCPUUtilityLegacy.pdb

@@ -1,42 +1,115 @@
-# XenoCPUUtility-legacy
-Hello! I am proud to announce that I have made a (hopefully) retro hardware compatible version of XenoCPUUtility! It is in development but should run on windows xp and newer windows OS.
+# XenoCPUUtility Legacy Edition
 
-The features it includes: 
-1. single core FP benchmark
-2. multi core FP benchmark
-3. Configurable PI time based benchmark
-4. heavy load stress test (utilizes all possible cores)
-5. overclock stability benchark also uses all possible cores
+A backport of **XenoCPUUtility** benchmarking and stress testing tools for **Windows XP, Vista, and Windows 7**.
 
-It is bases on .NET 4 for the UI and the backend is in C++ 
+## Features
 
-System requirments:
-CPU: Pentium III / Athlon XP or newer
-Ram: 256-512mb 
-GPU: any supported by windows XP or newer
-Storage: 64KB 
-OS: windows XP or newer
-This already supports newer architectures but I am 90% sure it should work with these if now contact me at nkthebass@gmail.com
+This legacy version includes all the core performance testing functionality:
 
-  1. Intel Architectures (1998–2012)
-P6 Microarchitecture (1995–2001): Pentium II, Pentium III, Pentium III Xeon, Celeron (Coppermine/Tualatin).
-NetBurst Architecture (2000–2006): Pentium 4 (Willamette, Northwood, Prescott), Pentium D (Dual Core), Xeon (NetBurst).
-Pentium M Architecture (2003–2006): Banias, Dothan (Crucial for mobile XP benchmarks).
-Core Microarchitecture (2006–2008): Core 2 Duo, Core 2 Quad, Core 2 Extreme, Pentium Dual-Core.
-Intel Core i-Series (1st Gen - "Nehalem" 2008–2010): Core i7, i5, i3 (introduced Integrated Memory Controller).
-Intel Core i-Series (2nd Gen - "Sandy Bridge" 2011): Core i7/i5/i3 2000-series (major AVX instruction set update).
-Intel Core i-Series (3rd Gen - "Ivy Bridge" 2012): Core i7/i5/i3 3000-series (introduced 22nm/3D Transistors).
-Intel Atom (2008+): Bonnell/Saltwell (for netbooks running XP/Vista/7). 
-  2. AMD Architectures (1998–2012)
-K6-2/K6-III Architecture (1998–2000): AMD K6-2, K6-III (Socket 7/Super 7).
-K7 Architecture (1999–2004): AMD Athlon (Slot A), Athlon XP, Duron, Mobile Athlon.
-K8 Architecture (2003–2007): AMD64 (Opteron, Athlon 64, Athlon 64 X2, Sempron). Note: First 64-bit consumer CPUs.
-K10 Architecture (2007–2011): Phenom, Phenom II, Athlon II, Opteron (Socket AM2+/AM3).
-Bulldozer Architecture (2011–2012): FX-Series (FX-8150/8350), Piledriver (2012).
-AMD APUs (2011–2012): "Llano" (A-Series A8/A6/A4) and "Trinity". 
-  3. Key Legacy/Alternative Architectures (1998–2005)
-VIA C3 / Cyrix III (1999–2001): Derived from Centaur Technology (Socket 370).
-VIA C7 / Eden (2005): Ultra-low power, low-performance chips.
-PowerPC (Apple): While Mac-based, the G3 (1997), G4 (1999), and G5 (2003) were relevant in the 98-05 era.
+### Benchmarks
+- **Single-Core Benchmark** - Measures peak single-thread floating-point performance
+- **Multi-Core Benchmark** - Aggregates all CPU threads for total throughput  
+- **Path Tracing Benchmark** - CPU-intensive ray tracing workload
 
-This is a legacy version of my main project, to visit the main page go here: https://github.com/nkthebass/XenoCPUUtility
+### Stress Tests
+- **Heavy Load Stress** - Continuous sqrt/sin/cos workload for sustained 95-100% CPU saturation
+- **Instability Check Mode** - 4-phase rotating workload to detect marginal CPU instabilities and voltage droops
+  - Phase 1: FP-heavy (sqrt/sin/cos)
+  - Phase 2: Integer operations (bit manipulation)
+  - Phase 3: Memory operations (pointer chasing simulation)
+  - Phase 4: Mixed bandwidth workload
+  - Periodic idle dips to detect voltage regulation issues
+
+### Control Features
+- Pause/Resume stress testing
+- Real-time status display
+- CPU info and metrics display
+
+## System Requirements
+
+- **OS**: Windows XP SP3, Windows Vista, or Windows 7
+- **RAM**: 1GB minimum
+- **.NET Framework**: 4.0 or higher
+
+## Compatibility
+
+This version is built on **.NET Framework 4.0**, which supports:
+- ✓ Windows XP SP3
+- ✓ Windows Vista
+- ✓ Windows 7
+- ✓ Windows 8+ (obviously)
+
+## Building
+
+### Prerequisites
+- Visual Studio 2010+ or Visual Studio Build Tools
+- .NET Framework 4.0 Target Pack
+
+### Compile
+```bash
+msbuild XenoCPUUtility-Legacy.csproj /p:Configuration=Release
+```
+
+Or open in Visual Studio and build normally.
+
+## Usage
+
+1. Run `XenoCPUUtilityLegacy.exe`
+2. Click a benchmark button to run performance tests
+3. Click a stress test button to begin CPU stress testing
+4. Use Pause/Resume to temporarily suspend testing
+5. Click Stop Stress to end testing
+
+Results appear in the text box with timestamps.
+
+## Architecture
+
+### Core Components
+
+**BenchmarkEngine.cs**
+- Single-thread benchmark using math operations
+- Multi-thread benchmark with parallelization
+- Normalized scoring system
+
+**StressEngine.cs**
+- Heavy Load mode: continuous FP workload
+- Instability Check mode: rotating 4-phase workload
+- Pause/Resume via ManualResetEvent
+- Thread-safe operation
+
+**PathTracerBenchmark.cs**
+- Simple path tracing renderer (no dependencies)
+- Simplified Vector3 math implementation
+- Sphere and plane ray intersection
+- Parallel pixel processing
+
+**HardwareMetrics.cs**
+- CPU load via Performance Counters
+- CPU frequency via WMI
+- CPU core/thread count
+
+**MainForm.cs**
+- Simple WinForms UI (no WebView2 dependency)
+- Results display
+- Benchmark/stress control
+
+## Differences from Modern Version
+
+1. **No WebView2** - Uses simple WinForms UI instead
+2. **No RAMStress** - Removed memory stress module (can be added if needed)
+3. **No WHEA monitoring** - Simplified hardware error detection
+4. **Simplified graphics** - No chart rendering (results only in text)
+5. **.NET 4.0 only** - No C# 8+ features, using older patterns
+
+## Performance Notes
+
+- Single-core benchmark targets ~10 seconds
+- Multi-core benchmark targets ~6 seconds
+- Path tracing is CPU-bound and scales with thread count
+- Stress test utilizes all available cores by default
+- Tests are deterministic (same seed for reproducibility)
+
+## License
+
+Ported from XenoCPUUtility by nkthebass
+Legacy version created for historical OS support
