@@ -83,7 +83,7 @@ Results appear in the text box with timestamps.
 * i7-5960X 4.3GHz: 530
 * Ryzen 5 7600X: 685
 * Ryzen 9 9950X: 1700
-* ryzen 5 3600: 460
+* ryzen 5 3600: 400
 
 ---
 
@@ -138,6 +138,7 @@ Ported from XenoCPUUtility by nkthebass
 Legacy version created for historical OS support
 
 This project does take use of "vibe coding" rest be assured it is far from being "AI slop". 
+
 
 
 
