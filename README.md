@@ -132,8 +132,11 @@ Results appear in the text box with timestamps.
 - Stress test utilizes all available cores by default
 - Tests are deterministic (same seed for reproducibility)
 
-## License
+## Extra
 
 Ported from XenoCPUUtility by nkthebass
 Legacy version created for historical OS support
+
+This project does take use of "vibe coding" rest be assured it is far from being "AI slop". 
+
 
