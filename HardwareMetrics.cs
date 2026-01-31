@@ -5,6 +5,17 @@ using System.Threading;
 
 namespace XenoCPUUtilityLegacy
 {
+    // RAM type enum (capped at DDR3, future-safe)
+    public enum RamType
+    {
+        Unknown,
+        SDRAM,
+        DDR1,
+        DDR2,
+        DDR3,
+        DDR4,
+        DDR5
+    }
     /// <summary>
     /// Hardware metrics provider for CPU load and frequency information.
     /// Ported from XenoCPUUtility for .NET 4.0 compatibility.

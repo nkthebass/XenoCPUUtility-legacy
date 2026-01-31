@@ -109,6 +109,7 @@ namespace XenoCPUUtilityLegacy
                 score *= 2.875; // User calibration: multiply single-core score
             }
 
+            score /= 10.0; // Correct for 10x scale difference
             return Math.Round(Math.Max(score, 0d), 1);
         }
     }
